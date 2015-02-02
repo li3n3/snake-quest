@@ -1,0 +1,11 @@
+Do you do EVERYTHING in virtualenv?
+Are there things you'd do outside of it?
+
+Exercise 1.3 ("help('print')") returns nothing, suggesting something may be missing? True in both system interpreter and iPython
+
+
+
+
+***
+Stuff for me to do:
+* Go to python.org and search for stuff, like 'print'
