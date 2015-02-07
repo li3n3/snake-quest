@@ -40,3 +40,8 @@ In [2]: print math
 <module 'math' from '/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-dynload/math.so'>
 ```
 ^^ that's interesting! In the book, it's a built-in (but probably using the system interpreter?)
+
+* An expression has a value, and a statement gives an instruction?
+* Interesting thing: Chapter 3 starts referring to objects (e.g. "module object," "function object") without explaining what an object is, but by starting to *show* what an object is.
+
+* Section 3.10: gets a little meow-meow
