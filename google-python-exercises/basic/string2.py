@@ -33,8 +33,14 @@ def verbing(s):
 # So 'This dinner is not that bad!' yields:
 # This dinner is good!
 def not_bad(s):
-  # +++your code here+++
-  return
+  not_starts_at = s.find('not')   # gets the index for 'not'
+  bad_starts_at = s.find('bad')   # gets the index for 'bad'; both return -1 if not found
+
+  if bad_starts_at > not_starts_at:
+    cut_this_out = s[not_starts_at:bad_starts_at+3]
+    s = s.replace(cut_this_out, 'good')
+
+  return s
 
 
 # F. front_back
@@ -45,8 +51,18 @@ def not_bad(s):
 # Given 2 strings, a and b, return a string of the form
 #  a-front + b-front + a-back + b-back
 def front_back(a, b):
-  # +++your code here+++
-  return
+  def hack_in_two(string):
+    if len(string) % 2 == 0:
+      string_front = string[:len(string) / 2]
+      string_back  = string[len(string) / 2:]
+    else:
+      string_front = string[:(len(string) / 2) + 1]
+      string_back  = string[(len(string) / 2) + 1:]
+    return string_front, string_back
+
+  a_front, a_back = hack_in_two(a)
+  b_front, b_back = hack_in_two(b)
+  return a_front + b_front + a_back + b_back
 
 
 # Simple provided test() function used in main() to print
