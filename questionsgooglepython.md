@@ -4,3 +4,7 @@
 
 Sorting:
 * This is a bad idea for naming a function, right? "You can also pass in your own MyFn as the key function, like this:"
+
+
+2/23:
+* How do I make it so my git pushes go both to BSGH and InternetGH?
