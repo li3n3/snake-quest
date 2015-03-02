@@ -27,8 +27,24 @@ def remove_adjacent(nums):
 # Ideally, the solution should work in "linear" time, making a single
 # pass of both lists.
 def linear_merge(list1, list2):
-  # +++your code here+++
-  return
+  if list1[0] <= list2[0]:
+    katamari_list = list1        # I know this isn't a copy but I want a new name for this
+    shrink_list = list2
+  else:
+    katamari_list = list2
+    shrink_list = list1
+
+  index = 0
+  shrink_index = 0
+  while len(shrink_list) > 0:
+    if katamari_list[index] < shrink_list[shrink_index]:
+      index += 1
+    else:
+      katamari_list.insert(index, shrink_list[shrink_index])
+      print 'about to pop'
+      shrink_list.pop(0)
+
+  return katamari_list
 
 
 
