@@ -27,43 +27,24 @@ def remove_adjacent(nums):
 # Ideally, the solution should work in "linear" time, making a single
 # pass of both lists.
 def linear_merge(list1, list2):
-  if list1[0] <= list2[0]:
-    katamari_list = list1        # I know this isn't a copy but I want a new name for this
-    shrink_list = list2          # so katamari_list is what we'll add everything to
-  else:
-    katamari_list = list2
-    shrink_list = list1
+  final_list = []
+  total_length = len(list1) + len(list2)
 
-  kat_index = 0
-  shrink_index = 0
-  while len(shrink_list) > 0:
-    # if there's only one thing left in katamari_list, don't just slop everything else on the end
-    if len(katamari_list[kat_index:]) == 1 and katamari_list[kat_index] < shrink_list[shrink_index]:
-      katamari_list.insert(kat_index-1, shrink_list[shrink_index])
-      shrink_list.pop(0)
-    # if our position in katamari_list has a smaller value than our current shrink_list position,
-    # perfect; let's move on to the next value in katamari_list
-    elif katamari_list[kat_index] < shrink_list[shrink_index]:
-      kat_index += 1
-    # if our position in katamari_list has a *larger* value, pop off the next shrink_list value
-    # and plunk it in before the current kat_index
+  while len(final_list) != total_length:
+    if len(list1) == 0 or len(list2) == 0:
+      if len(list1) == 0:
+        final_list.extend(list2)
+      else:
+        final_list.extend(list1)
+    elif list1[0] <= list2[0]:
+      final_list.append(list1.pop(0))
     else:
-      katamari_list.insert(kat_index-1, shrink_list[shrink_index])
-      # print 'about to pop'
-      shrink_list.pop(0)
+      final_list.append(list2.pop(0))
 
-  return katamari_list
+  return final_list
 
-
-
-
-
-
-
-
-
-
-
+# The below is Google's editorializing on my presumed solution, to which I say,
+# "Fight me IRL."
 
 
 # Note: the solution above is kind of cute, but unforunately list.pop(0)
