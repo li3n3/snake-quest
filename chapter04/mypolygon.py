@@ -38,7 +38,7 @@ def circle(t, r):
     Draws an approximate circle with the given radius
     '''
     # circumference = 2 * pi * r
-    circ = 2 * 3.14 * r
+    circ = 2 * math.pi * r
     # TODO: figure out a better way to determine number of sides
     n = 36
     length = circ / n
