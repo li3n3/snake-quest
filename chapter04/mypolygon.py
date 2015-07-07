@@ -1,5 +1,6 @@
 #RC day 2
 from swampy.TurtleWorld import *
+import math
 
 world = TurtleWorld()
 bob = Turtle()
