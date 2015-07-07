@@ -50,7 +50,7 @@ def circle(t, r):
 # length 80
 # polygon(bob, 80, 5)
 
-# circle experiment!
-circle(bob, 50)
+# circle! approximate circle, anyway
+circle(bob, 95)
 
 wait_for_user()
