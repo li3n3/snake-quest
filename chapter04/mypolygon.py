@@ -44,6 +44,10 @@ def circle(t, r):
     length = circ / n
     return polygon(t, length, n)
 
+# skipping 4.3 exercise 5
+
+
+
 # square(bob, 42)
 
 # so, for instance, this draws a 5-sided polygon, with sides of
