@@ -30,10 +30,25 @@ def polygon(t, length, n):
         fd(t, length)
         lt(t, 360/n)
 
+def circle(t, r):
+    '''
+    t: a Turtle
+    r: a radius
+    Draws an approximate circle with the given radius
+    '''
+    # circumference = 2 * pi * r
+    circ = 2 * 3.14 * r
+    length = r/4
+    n = int(circ / length)
+    return polygon(t, length, n)
+
 # square(bob, 42)
 
 # so, for instance, this draws a 5-sided polygon, with sides of
 # length 80
-polygon(bob, 80, 5)
+# polygon(bob, 80, 5)
+
+# circle experiment!
+circle(bob, 50)
 
 wait_for_user()
