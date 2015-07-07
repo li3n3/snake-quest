@@ -12,13 +12,26 @@ bob = Turtle()
 def square(t, length):
     '''
     t: a Turtle
-    length: the length of sides
+    length: the length of each side
     Turtle draws a square with specified side length
     '''
     for i in range(4):
         fd(t, length)
         lt(t)
 
-square(bob, 130)
+def polygon(t, length, n):
+    '''
+    t: a Turtle
+    length: the length of each side
+    n: number of sides
+    Turtle draws a polygon with specified side length
+    '''
+    for i in range(n):
+        fd(t, length)
+        lt(t, 45)
+
+# square(bob, 42)
+
+polygon(bob, 80, 8)
 
 wait_for_user()
