@@ -28,10 +28,12 @@ def polygon(t, length, n):
     '''
     for i in range(n):
         fd(t, length)
-        lt(t, 45)
+        lt(t, 360/n)
 
 # square(bob, 42)
 
-polygon(bob, 80, 8)
+# so, for instance, this draws a 5-sided polygon, with sides of
+# length 80
+polygon(bob, 80, 5)
 
 wait_for_user()
