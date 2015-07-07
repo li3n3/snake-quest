@@ -5,19 +5,20 @@ world = TurtleWorld()
 bob = Turtle()
 
 # draw square with a for loop!
-for i in range(4):
-    fd(bob, 100)
-    lt(bob)
+# for i in range(4):
+#     fd(bob, 100)
+#     lt(bob)
 
-def square(t):
+def square(t, length):
     '''
-    takes a parameter t, a Turtle
-    uses that turtle to draw a square
+    t: a Turtle
+    length: the length of sides
+    Turtle draws a square with specified side length
     '''
     for i in range(4):
-        fd(t, 100)
+        fd(t, length)
         lt(t)
 
-square(bob)
+square(bob, 130)
 
 wait_for_user()
