@@ -39,8 +39,9 @@ def circle(t, r):
     '''
     # circumference = 2 * pi * r
     circ = 2 * 3.14 * r
-    length = r/4
-    n = int(circ / length)
+    # TODO: figure out a better way to determine number of sides
+    n = 36
+    length = circ / n
     return polygon(t, length, n)
 
 # square(bob, 42)
