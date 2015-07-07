@@ -4,18 +4,9 @@ from swampy.TurtleWorld import *
 world = TurtleWorld()
 bob = Turtle()
 
-# draw a right angle
-fd(bob, 100)
-lt(bob)
-fd(bob, 100)
-
-# continue going to complete a square
-lt(bob)
-fd(bob, 100)
-lt(bob)
-fd(bob, 100)
-
+# draw square with a for loop!
 for i in range(4):
-    print 'Hello!'
+    fd(bob, 100)
+    lt(bob)
 
 wait_for_user()
