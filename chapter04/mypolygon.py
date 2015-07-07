@@ -3,6 +3,7 @@ from swampy.TurtleWorld import *
 
 world = TurtleWorld()
 bob = Turtle()
+bob.delay = 0.2
 
 # draw square with a for loop!
 # for i in range(4):
