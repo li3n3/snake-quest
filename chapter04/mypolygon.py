@@ -4,6 +4,7 @@ import math
 
 world = TurtleWorld()
 bob = Turtle()
+alice = Turtle()
 bob.delay = 0.2
 
 # draw square with a for loop!
@@ -57,5 +58,6 @@ def circle(t, r):
 
 # circle! approximate circle, anyway
 circle(bob, 95)
+circle(alice, 30)
 
 wait_for_user()
