@@ -31,7 +31,7 @@ def polygon(t, length, n):
     '''
     for i in range(n):
         fd(t, length)
-        lt(t, 360/n)
+        lt(t, 360.0/n)
 
 def circle(t, r):
     '''
