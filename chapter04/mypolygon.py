@@ -41,16 +41,16 @@ def circle(t, r):
     '''
     # circumference = 2 * pi * r
     circ = 2 * math.pi * r
-    # TODO: figure out a better way to determine number of sides
-    n = 36
+    # use a reasonable number of sides; I don't entirely get the +1
+    n = int(circ / 3) + 1
     length = circ / n
-    return polygon(t, length, n)
+    polygon(t, length, n)
 
 # skipping 4.3 exercise 5
 
 
 
-# square(bob, 42)
+# square(bob, 95)
 
 # so, for instance, this draws a 5-sided polygon, with sides of
 # length 80
