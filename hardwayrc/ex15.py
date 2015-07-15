@@ -11,14 +11,3 @@ txt = open(filename)
 print "Here's your file %r:" % filename
 # okay so HERE'S the text of the file, though!
 print txt.read()
-
-print "Type the filename again:"
-# getting the same filename in a different way (via raw_input,
-# and not via arguments given at runtime)
-file_again = raw_input("> ")
-
-# open the same file and assign it to a second variable
-txt_again = open(file_again)
-
-# print the file from the second variable
-print txt_again.read()
