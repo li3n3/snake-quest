@@ -16,3 +16,6 @@ txt = open(filename)
 print "Here's your file %r:" % filename
 # okay so HERE'S the text of the file, though!
 print txt.read()
+
+# it's cool to be responsible:
+txt.close()
