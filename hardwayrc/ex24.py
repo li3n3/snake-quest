@@ -34,4 +34,5 @@ print "We'd have {0} beans, {1} jars, and {2} crates.".format(beans, jars, crate
 start_point = start_point / 10
 
 print "We can also do that this way:"
-print "We'd have {0} beans, {1} jars, and {2} crates.".format(secret_formula(start_point))
+# TODO: I'd like to figure out how to do this with .format instead
+print "We'd have %d beans, %d jars, and %d crates." % secret_formula(start_point)
