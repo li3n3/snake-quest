@@ -4,6 +4,7 @@ def gold_room():
     print "This room is full of gold.  How much do you take?"
 
     choice = raw_input("> ")
+
     if int(choice) > 0:
         how_much = int(choice)
     else:
