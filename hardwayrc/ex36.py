@@ -27,20 +27,21 @@ def herb_garden():
     print "Regrettably, so has a cat."
     print "Do you turn around, hiss, or affix yourself to the cat?"
 
-    while True:
-        choice = raw_input("> ")
-    
-        if "turn" in choice:
-            start()
-        elif choice == "hiss":
-            demise("The cat notes your small size, hisses back, hits you, and eats you.")
-        elif "affix" in choice:
-            print "You fling yourself at the cat's haunches, sticking your landing with ease."
-            print "The cat does not appear to have detected your presence."
-            print "Looks like you're hitching a ride..."
-            plant_bounty("basil")
-        else:
-            print "I don't think that's such a good idea right now."
+    choice = raw_input("> ")
+
+    if "turn" in choice:
+        start()
+    elif choice == "hiss":
+        demise("The cat notes your small size, hisses back, hits you, and eats you.")
+    elif "affix" in choice:
+        print "You fling yourself at the cat's haunches, sticking your landing with ease."
+        print "The cat does not appear to have detected your presence."
+        print "Looks like you're hitching a ride..."
+        plant_bounty("basil")
+    else:
+        print "I don't think that's such a good idea right now."
+        print "Let's go over this again, okay?"
+        herb_garden()
 
 
 def berries():
