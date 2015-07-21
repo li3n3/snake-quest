@@ -14,7 +14,7 @@ def start():
     elif choice == "right":
         berries()
     elif choice == "center":
-        annuals()
+        vegetables()
     else:
         print "You're just a slug, huh?"
         print "I'll pick for you."
@@ -71,8 +71,8 @@ def berries():
         demise("This is not a time to be clever. A frog spies you pondering, and in a split second you are consumed.")
 
 
-def annuals():
-    print "eyyy the annuals are here"
+def vegetables():
+    print "eyyy the vegetables are here"
 
 
 def plant_bounty(type_of_plant):
@@ -104,7 +104,7 @@ def demise(reason):
     print reason, "This was not such a good night."
     exit(0)
 
-gardens = [herb_garden, annuals, berries]
+gardens = [herb_garden, vegetables, berries]
 
 start()
 
