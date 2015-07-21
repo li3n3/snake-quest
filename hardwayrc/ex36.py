@@ -12,7 +12,7 @@ def start():
     if choice == "left":
         herb_garden()
     elif choice == "right":
-        perennials()
+        berries()
     elif choice == "center":
         annuals()
     else:
@@ -27,25 +27,40 @@ def herb_garden():
     print "Regrettably, so has a cat."
     print "Do you turn around, hiss, or affix yourself to the cat?"
 
-    choice = raw_input("> ")
+    while True:
+        choice = raw_input("> ")
+    
+        if "turn" in choice:
+            start()
+        elif choice == "hiss":
+            demise("The cat notes your small size, hisses back, hits you, and eats you.")
+        elif "affix" in choice:
+            print "You fling yourself at the cat's haunches, sticking your landing with ease."
+            print "The cat does not appear to have detected your presence."
+            print "Looks like you're hitching a ride..."
+            plant_bounty("basil")
+        else:
+            print "I don't think that's such a good idea right now."
 
-    if "turn" in choice:
-        start()
-    elif choice == "hiss":
-        demise("The cat notes your small size, hisses back, hits you, and eats you.")
 
-def perennials():
-    print "suppp it's perennials"
+def berries():
+    print "suppp it's berries"
+
 
 def annuals():
     print "eyyy the annuals are here"
+
+
+def plant_bounty(type_of_plant):
+    print "Hot diggity. An entire world of {0} surrounds you.".format(type_of_plant)
+    print "Wanna stuff your "
 
 
 def demise(reason):
     print reason, "This was not such a good night."
     exit(0)
 
-gardens = [herb_garden, annuals, perennials]
+gardens = [herb_garden, annuals, berries]
 
 start()
 
