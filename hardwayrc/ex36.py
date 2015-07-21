@@ -19,7 +19,7 @@ def start():
     elif choice == "center":
         vegetables()
     else:
-        print "You're just a slug, huh?"
+        print "\nYou're just a slug, huh?"
         print "I'll pick for you."
         print "You squirm around in the air, finally hitting the ground with a thud."
         random.choice(gardens)()
@@ -37,12 +37,12 @@ def herb_garden():
     elif choice == "hiss":
         demise("The cat notes your small size, hisses back, hits you, and eats you.")
     elif "affix" in choice:
-        print "You fling yourself at the cat's haunches, sticking your landing with ease."
+        print "\nYou fling yourself at the cat's haunches, sticking your landing with ease."
         print "The cat does not appear to have detected your presence."
         print "Looks like you're hitching a ride..."
         plant_bounty("basil")
     else:
-        print "I don't think that's such a good idea right now."
+        print "\nI don't think that's such a good idea right now."
         print "Let's go over this again, okay?"
         herb_garden()
 
@@ -90,13 +90,13 @@ def plant_bounty(type_of_plant):
     choice = raw_input("> ")
 
     if choice == "yes":
-        print "So good. You nibble a bit, then a bit more."
+        print "\nSo good. You nibble a bit, then a bit more."
         print "It's so lovely to get a good meal."
         print "Covered in {0}, you slink away happily into the dark night.".format(type_of_plant)
         print "This was a good night to be a slug."
         exit(0)
     elif choice == "no":
-        print "I know it's hard to accept, but you gotta destroy some things to live."
+        print "\nI know it's hard to accept, but you gotta destroy some things to live."
         print "But if you can't do that, I guess it's you who will be destroyed."
         demise("You remain still, frozen by your conscience, until the sun arrives and dries you up.")
     else:
