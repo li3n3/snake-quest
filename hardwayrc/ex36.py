@@ -55,11 +55,11 @@ def berries():
 
     if "run" in choice:
         start()
-    elif "negotiat" in choice:
-        pass
+    elif "begin" or "negotiat" in choice:
+        print "let's talk, then"
         # then weirdly good stuff
     elif "hide" in choice:
-        pass
+        print "this is gonna suck"
         # unsuccessful demise stuff
 
 
