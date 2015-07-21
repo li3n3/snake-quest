@@ -3,6 +3,9 @@ import random
 
 
 def start():
+    """
+    You think to yourself, 'Yes, it is good to be a slug.' You set out.
+    """
     print "\nYou find yourself on a garden path, dark and damp."
     print "There are three garden beds here: left, right, and center."
     print "Where would you like to crawl?"
