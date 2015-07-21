@@ -55,12 +55,20 @@ def berries():
 
     if "run" in choice:
         start()
-    elif "begin" or "negotiat" in choice:
-        print "let's talk, then"
-        # then weirdly good stuff
+    elif "begin" in choice or "negotiat" in choice:
+        print "\nIn your most calm voice, you address the gardener."
+        print "'I would like to propose a truce,' you say."
+        print "'If you would give me some of your berries, I will stay away from the rest.'"
+        print "The gardener considers this for a moment, finally plucking a plump ripe strawberry, then one more, and plunking them down next to you."
+        plant_bounty("strawberries")
     elif "hide" in choice:
-        print "this is gonna suck"
-        # unsuccessful demise stuff
+        print "\nYou hide underneath the nearest safe-looking strawberry plant."
+        print "The gardener sweeps the light over the low shrubby leaves."
+        print "With each pass, they check underneath the leaves toward the ground."
+        print "At last, you are unearthed. The look on the gardener's face is not one of pity."
+        demise("You are unceremoniously plucked from your hiding spot and plunged into a jar of soapy water, where you drown.")
+    else:
+        demise("This is not a time to be clever. A frog spies you pondering, and in a split second you are consumed.")
 
 
 def annuals():
