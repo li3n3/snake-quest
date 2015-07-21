@@ -45,7 +45,22 @@ def herb_garden():
 
 
 def berries():
-    print "suppp it's berries"
+    print "In the dark, you see a beautiful brightness."
+    print "All around you are berries, ripe and lushly scented."
+    print "You realize with some horror that the brightness is a headlamp."
+    print "There is a gardener here, searching for your kind."
+    print "Do you run away, begin negotiations, or hide under a leaf?"
+
+    choice = raw_input("> ")
+
+    if "run" in choice:
+        start()
+    elif "negotiat" in choice:
+        pass
+        # then weirdly good stuff
+    elif "hide" in choice:
+        pass
+        # unsuccessful demise stuff
 
 
 def annuals():
