@@ -53,8 +53,27 @@ def annuals():
 
 
 def plant_bounty(type_of_plant):
+    """
+    Yay, winning! Takes a type of plant to be eaten and lets you eat.
+    """
     print "Hot diggity. An entire world of {0} surrounds you.".format(type_of_plant)
-    print "Wanna stuff your "
+    print "You're so hungry...finally, there is food."
+    print "Do you eat the {0}?".format(type_of_plant)
+
+    choice = raw_input("> ")
+
+    if choice == "yes":
+        print "So good. You nibble a bit, then a bit more."
+        print "It's so lovely to get a good meal."
+        print "Covered in {0}, you slink away happily into the dark night.".format(type_of_plant)
+        print "This was a good night to be a slug."
+        exit(0)
+    elif choice == "no":
+        print "I know it's hard to accept, but you gotta destroy some things to live."
+        print "But if you can't do that, I guess it's you who will be destroyed."
+        demise("You remain still, frozen by your conscience, until the sun arrives and dries you up.")
+    else:
+        demise("It took too long to get here, it seems. You are too hungry to eat now, or ever again.")
 
 
 def demise(reason):
