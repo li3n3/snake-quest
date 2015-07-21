@@ -75,7 +75,21 @@ def berries():
 
 
 def vegetables():
-    print "eyyy the vegetables are here"
+    print "\nYou've arrived in a veritable forest of small leaves, juicy and full of potential."
+    print "Over the tops of their tiny tips, you spy an owl in a nearby tree."
+    print "What's more, the owl has clearly spied you. Uh oh."
+    print "Do you flee, sing to the owl, or tell a knock-knock joke?"
+
+    choice = raw_input("> ")
+
+    if "flee" in choice:
+        # run away like a baby
+    elif "sing" in choice:
+        # this works surprisingly well
+    elif "knock" in choice:
+        # owls are not amused by knock-knock jokes
+    else:
+        demise("The owl swoops down, pleased you've made yourself such an easy target, and swallows you whole.")
 
 
 def plant_bounty(type_of_plant):
