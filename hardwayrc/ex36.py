@@ -18,7 +18,8 @@ def start():
     else:
         print "You're just a slug, huh?"
         print "I'll pick for you."
-        gardens[random.randint(0, 2)]
+        print "You squirm around in the air, finally hitting the ground with a thud."
+        random.choice(gardens)()
 
 def herb_garden():
     print "A fine aroma surrounds you."
