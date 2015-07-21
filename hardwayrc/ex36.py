@@ -76,18 +76,30 @@ def berries():
 
 def vegetables():
     print "\nYou've arrived in a veritable forest of small leaves, juicy and full of potential."
-    print "Over the tops of their tiny tips, you spy an owl in a nearby tree."
+    print "Vegetable starts as far as the eye can see."
+    print "Over the tops of their tiny tips, you spy an owl in a nearby tree. Not good."
     print "What's more, the owl has clearly spied you. Uh oh."
     print "Do you flee, sing to the owl, or tell a knock-knock joke?"
 
     choice = raw_input("> ")
 
     if "flee" in choice:
-        # run away like a baby
+        start()
     elif "sing" in choice:
-        # this works surprisingly well
+        print "\nYou begin to sing a seemingly tuneless melody."
+        print "The owl, intrigued, watches you intently."
+        print "Out of your undulating foot-body comes a glorious, open vowel, rippling through the night air."
+        print "The owl, inspired, joins in song with you. Owls, after all, love vowels. 'Hooo!' the owl calls."
+        print "For a glorious moment in time, all seems perfectly in sync."
+        print "The owl, overwhelmed by feelings, flies away, and you find yourself alone again."
+        plant_bounty("radishes")
     elif "knock" in choice:
-        # owls are not amused by knock-knock jokes
+        print "\nIn your bravest voice, you say to the owl, 'knock knock.'"
+        print "The owl, in turn, asks, 'Whooooo\'s there?'"
+        print "You reply, 'a very cool and brave slug.'"
+        print "The owl turns its head and says, 'Whooooo on earth do you think you are?'"
+        print "As it turns out, owls do not like knock-knock jokes."
+        demise("The owl makes a beeline for you, punishing your non-joke by eating you.")
     else:
         demise("The owl swoops down, pleased you've made yourself such an easy target, and swallows you whole.")
 
