@@ -4,6 +4,7 @@ import random
 
 def start():
     """
+    Welcome to Sluglife.
     You think to yourself, 'Yes, it is good to be a slug.' You set out.
     """
     print "\nYou find yourself on a garden path, dark and damp."
