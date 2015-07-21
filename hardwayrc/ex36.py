@@ -118,11 +118,9 @@ def plant_bounty(type_of_plant):
 
 
 def demise(reason):
-    print reason, "This was not such a good night."
+    print "\n{0} This was not such a good night.".format(reason)
     exit(0)
 
 gardens = [herb_garden, vegetables, berries]
 
 start()
-
-# print "You think to yourself, 'Yes, it is good to be a slug.'"
