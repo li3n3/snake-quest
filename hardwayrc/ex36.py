@@ -25,6 +25,9 @@ def start():
         random.choice(gardens)()
 
 def herb_garden():
+    """
+    An herb garden. It's got basil and a temperamental cat. So, a cat.
+    """
     print "\nA fine aroma surrounds you."
     print "It appears you have found yourself in the herb garden."
     print "Regrettably, so has a cat."
@@ -48,6 +51,9 @@ def herb_garden():
 
 
 def berries():
+    """
+    So many berries. And a displeased gardener.
+    """
     print "\nIn the dark, you see a beautiful brightness."
     print "All around you are berries, ripe and lushly scented."
     print "You realize with some horror that the brightness is a headlamp."
@@ -75,6 +81,9 @@ def berries():
 
 
 def vegetables():
+    """
+    Vegetables are here, but an owl is thinking about visiting here, too.
+    """
     print "\nYou've arrived in a veritable forest of small leaves, juicy and full of potential."
     print "Vegetable starts as far as the eye can see."
     print "Over the tops of their tiny tips, you spy an owl in a nearby tree. Not good."
@@ -130,6 +139,9 @@ def plant_bounty(type_of_plant):
 
 
 def demise(reason):
+    """
+    Bad decisions (or a lack thereof) have led to your downfall.
+    """
     print "\n{0} This was not such a good night.".format(reason)
     exit(0)
 
