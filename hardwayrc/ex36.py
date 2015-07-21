@@ -1,7 +1,6 @@
 from sys import exit
 import random
 
-gardens = [herb_garden(), annuals(), perennials()]
 
 def start():
     print "You find yourself on a garden path, dark and damp."
@@ -32,7 +31,8 @@ def annuals():
 def perennials():
     print "suppp it's perennials"
 
+gardens = [herb_garden, annuals, perennials]
 
-
+start()
 
 # print "You think to yourself, 'Yes, it is good to be a slug.'"
