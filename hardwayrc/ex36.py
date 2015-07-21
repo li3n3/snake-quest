@@ -109,7 +109,7 @@ def plant_bounty(type_of_plant):
     Yay, winning! Takes a type of plant to be eaten and lets you eat.
     But not if you hesitate.
     """
-    print "Hot diggity. A terrific bounty of {0}.".format(type_of_plant)
+    print "Oh wow. What have we here? A terrific bounty of {0}.".format(type_of_plant)
     print "You're so hungry...finally, there is food."
     print "Do you eat the {0}?".format(type_of_plant)
 
