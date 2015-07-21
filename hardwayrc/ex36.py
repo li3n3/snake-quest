@@ -3,7 +3,7 @@ import random
 
 
 def start():
-    print "You find yourself on a garden path, dark and damp."
+    print "\nYou find yourself on a garden path, dark and damp."
     print "There are three garden beds here: left, right, and center."
     print "Where would you like to crawl?"
 
@@ -22,7 +22,7 @@ def start():
         random.choice(gardens)()
 
 def herb_garden():
-    print "A fine aroma surrounds you."
+    print "\nA fine aroma surrounds you."
     print "It appears you have found yourself in the herb garden."
     print "Regrettably, so has a cat."
     print "Do you turn around, hiss, or affix yourself to the cat?"
@@ -45,7 +45,7 @@ def herb_garden():
 
 
 def berries():
-    print "In the dark, you see a beautiful brightness."
+    print "\nIn the dark, you see a beautiful brightness."
     print "All around you are berries, ripe and lushly scented."
     print "You realize with some horror that the brightness is a headlamp."
     print "There is a gardener here, searching for your kind."
