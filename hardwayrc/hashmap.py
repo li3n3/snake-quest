@@ -101,3 +101,15 @@ def list(aMap):
             # goes through each slot in the bucket
             for k, v in bucket:
                 print k, v
+
+# There is an interesting study drill:
+# 4. Read about Python’s assert feature and then take the hashmap code and add
+# assertions for each of the tests I’ve done instead of print. For example, you
+# can assert that the first get operation returns ”Flamenco Sketches” instead
+# of just printing that out.
+
+# That sounds good and fine, but I can't figure out what tests he's talking
+# about. Eerily similar to "After all of these functions I just have a little
+# bit of testing code that makes sure they work," which also confounded me. Dang.
+# I cannot figure out what the testing code is. I don't actually think it's the
+# ex39_test.py code, although that would be convenient.
