@@ -25,13 +25,14 @@ print thing.tangerine
 
 # look at all these ways to get things from things:
 # dict style
-mystuffs['apples'] # also this sudden pluralization is interesting
+mystuffs['apple'] # also this sudden pluralization is interesting:
+                  # it causes things to break here, & in the module/class ones
 
 # module style
-mystuff.apples()
+mystuff.apple()
 print mystuff.tangerine
 
 # class style
 thing = MyStuff()
-thing.apples()
+thing.apple()
 print thing.tangerine
