@@ -1,4 +1,4 @@
-# I am a friend of exercise 40
+# I am a friend of exercise 40a
 def apple():
     print "I AM APPLES!"
 
