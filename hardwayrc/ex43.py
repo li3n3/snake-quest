@@ -124,3 +124,10 @@ class Map(object):
 # a_game.play()
 
 # left off partway through, because boredom is my enemy at RC
+
+# Study drills:
+# 1. I will.
+# 2. Door lock guesses 11 times because `guesses` only increments after the
+# guess has been made, so it doesn't catch the edge case at the end.
+# 3. This hasn't quite clicked yet, but I'd like to come back to it later.
+# 6. But I did read about finite state machines! That seemed interesting.
