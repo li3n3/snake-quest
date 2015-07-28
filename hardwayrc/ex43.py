@@ -122,3 +122,5 @@ class Map(object):
 # a_map = Map('central_corridor')
 # a_game = Engine(a_map)
 # a_game.play()
+
+# left off partway through, because boredom is my enemy at RC
