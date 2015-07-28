@@ -103,7 +103,7 @@ def vegetables():
         print "For a glorious moment in time, all seems perfectly in sync."
         print "The owl, overwhelmed by feelings, flies away, and you find yourself alone again."
         plant_bounty("radishes")
-    elif "knock" in choice:
+    elif "knock" in choice or "joke" in choice:
         print "\nIn your bravest voice, you say to the owl, 'knock knock.'"
         print "The owl, in turn, asks, 'Whooooo\'s there?'"
         print "You reply, 'a very cool and brave slug.'"
